@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+.previewPreChatUserIcon {
+    margin-top: 30px;
+    font-size: 130px !important;
+    color: silver;
+    margin-bottom: 25px;
+}
+
+/* .w-30ch {
+    width: 28ch;
+    margin-left: 2px !important;
+} */
+
+/* .mt-32 {
+    margin-top: 35px !important;
+    margin-left: -1px !important;
+} */
+
+/* .mod-title{
+    color: black !important;
+    text-align: center;
+} */
+
+.previewPreChatSurvey {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .previewPreChatFormBox {
+    width: 350px;
+    background-color: #fff;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .previewPreChatForm {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    min-height: 450px;
+  }

@@ -1,0 +1,95 @@
+.pwvalidator-div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 100%;
+    width: 230px;
+    height: 140px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+  }
+  .pwvalidator-triangle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 30px;
+    width: 0;
+    height: 0;
+    z-index: 7;
+    box-sizing: border-box;
+    border: 10px solid green;
+    border-color: transparent transparent white white;
+    transform-origin: 0 0;
+    /* // marginLeft: 30px; */
+    transform: rotate(45deg);
+    box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+  .pwvalidator-inner-div {
+    /* width: 200px;
+    height: 140px; */
+    padding: 15px;
+    margin-left: 30px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: -2px 6px 12px 0 #9f9f9f;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 890px) {
+    .pwvalidator-div {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin-left: -285px !important;
+      margin-top: auto;
+      margin-bottom: auto;
+      left: 100%;
+      width: 230px;
+      height: 140px;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+    }
+    .pwvalidator-triangle {
+        position: absolute;
+        top: -12% !important;
+        bottom: 0;
+        margin-top: 61% !important;
+        margin-bottom: auto;
+        left: 126px !important;
+        width: 0;
+        height: 0;
+        z-index: 7;
+        box-sizing: border-box;
+        border: 10px solid green;
+        border-color: transparent transparent white white;
+        transform-origin: 0 0;
+        transform: rotate(136deg) !important;
+        box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+      }
+      .pwvalidator-inner-div {
+        width: 200px;
+        height: 140px;
+        padding: 25px;
+        margin-left: auto !important;
+        margin-top: 105% !important;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: rgb(159 159 159) -2px 6px 12px 0px;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 122%;
+      }
+}

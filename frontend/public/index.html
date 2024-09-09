@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    
+<!--Script tag for fullstory starts-->
+    <!-- <script>
+      window['_fs_host'] = 'fullstory.com';
+      window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+      window['_fs_org'] = 'o-1HW4X0-na1';
+      window['_fs_namespace'] = 'FS';
+      (function(m,n,e,t,l,o,g,y){
+          if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+          g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+          o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+          y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+          g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+          g.anonymize=function(){g.identify(!!0)};
+          g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+          g.log = function(a,b){g("log",[a,b])};
+          g.consent=function(a){g("consent",!arguments.length||a)};
+          g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+          g.clearUserCookie=function(){};
+          g.setVars=function(n, p){g('setVars',[n,p]);};
+          g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+          if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+          g._v="1.3.0";
+      })(window,document,window['_fs_namespace'],'script','user');
+    </script> -->
+<!--Script tag for fullstory ends-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script> -->
+
+    <!-- <script>
+      // document.addEventListener('click', function(event) {
+      //   console.log('Clicked element:', event.target);
+      //   // Additional handling
+      // });
+
+      // document.addEventListener('keydown', function(event) {
+      //   console.log('Key down:', event.key);
+      //   // Additional handling
+      // });
+
+      // document.addEventListener('keypress', function(event) {
+      //   console.log('Key pressed:', event.key);
+      //   // Additional handling
+      // });
+
+      // document.addEventListener('keyup', function(event) {
+      //   console.log('Key up:', event.key);
+      //   console.log('Input value:', event.target.value);
+      //   // Additional handling
+      // });
+
+      // document.addEventListener('submit', function(event) {
+      //   console.log('Form submitted:', event.target);
+      //   // Additional handling
+      // });
+
+      // document.addEventListener('change', function(event) {
+      //   console.log('Value changed:', event.target);
+      //   // Additional handling
+      // });
+
+      // window.addEventListener('resize', function() {
+      //   console.log('Window resized');
+      //   // Additional handling
+      // });
+
+      // window.addEventListener('scroll', function() {
+      //   console.log('Document scrolled');
+      //   // Additional handling
+      // });
+
+      function generateSessionId() {
+        let sessionId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+        sessionStorage.setItem('userSessionId', sessionId)
+
+        return sessionId;
+      }
+
+      function getComponentSource(event) {
+        function findDebugSource(obj) {
+          if (!obj || (typeof obj !== 'object' && !Array.isArray(obj))) {
+              return undefined;
+          }
+
+          if (obj['_debugSource'] !== undefined && obj['_debugSource'] !== null) {
+              return obj['_debugSource'];
+          }
+
+          if (obj['_debugOwner']) {
+              return findDebugSource(obj['_debugOwner']);
+          }
+
+          return undefined;
+        }
+        let elementKey = Object.keys(event.srcElement).map(key => key).filter(keyName => keyName.startsWith("__reactFiber"))
+        let reactFiber = {...event.srcElement}[elementKey]
+        let objFound = findDebugSource(reactFiber)
+        if(objFound) return objFound
+      }
+
+
+      let userSessionId = sessionStorage.getItem('userSessionId')
+      if(!userSessionId) userSessionId = generateSessionId()
+
+      function getAttributes(element) {
+          const attributes = {};
+          Array.from(element.attributes).forEach((attr) => {
+              // Check if the attribute has a value
+              const value = attr.value !== undefined ? attr.value : null;
+              
+              attributes[attr.name] = value;
+            });
+            return attributes;
+          }
+          
+          
+          // Utility function to log events
+          function logEvent(eventType, additionalInfo = {}, dateAndTime) {
+
+          fetch('http://localhost:5000/api/fullStory/saveEvents', {
+            // fetch('http://136.144.28.93:5000/api/fullStory/saveEvents', {
+              method: 'POST', // or 'GET' depending on your API
+              headers: {
+                  'Content-Type': 'application/json',
+                  // Add any other headers as needed
+              },
+              body: JSON.stringify({
+                  userSessionId: userSessionId,
+                  data: data
+              }),
+          })
+          .then(response => {
+              // if (!response.ok) {
+              //     throw new Error(`HTTP error! Status: ${response.status}`);
+              // }
+              // return response.json();
+          })
+          .then(data => {
+              // console.log('API Response:', data);
+          })
+          .catch(error => {
+              // console.error('API Error:', error);
+          });
+
+      }
+
+      let currentNavigationPath = window.location.href;
+
+      // document.addEventListener('keyup', function(event) {
+      //   console.log('Key up:', event.key);
+      //   console.log('Input value:', event.target.value);
+      // });
+
+      // Click events
+      document.addEventListener('click', (event) => {
+        let dateAndTime = new Date()
+        let element = event.target;
+        console.log(" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ", typeof getEventListeners);
+        let elementKey = Object.keys(event.srcElement).map(key => key).filter(keyName => keyName.startsWith("__reactFiber"))
+
+        let tagName = event.target.tagName
+        // const listeners = getEventListeners(event.target);
+
+        let rawTag = (tagName === "BUTTON" || tagName === "INPUT" || tagName === "TEXTAREA") ? event.target.outerHTML : undefined
+        const targetData = {
+          tagName: tagName,
+          attributes: getAttributes(event.target),
+          value: (event.target.tagName === "BUTTON") ? event.target.innerText : "",
+        };
+        let source = getComponentSource(event)
+        logEvent('Click', { target: targetData, source: source, rawTag: rawTag }, dateAndTime);
+        if(currentNavigationPath !== window.location.href) {
+          let miliSeconds = dateAndTime.getSeconds() + 1;
+          dateAndTime.setSeconds(miliSeconds)
+          logEvent('Navigate To', { navigateTo: window.location.href }, new Date(dateAndTime));
+          currentNavigationPath = window.location.href;
+        }
+      });
+
+      // Change events (e.g., input, select)
+      document.addEventListener('change', (event) => {
+        const targetData = {
+          tagName: event.target.tagName,
+          attributes: getAttributes(event.target),
+          value: event.target.value,
+        };
+        let source = getComponentSource(event)
+        logEvent('Change', { target: targetData, source: source, rawTag: event.target.outerHTML });
+      });
+
+      // document.addEventListener('input', (event) => {
+      //   const targetData = {
+      //     tagName: event.target.tagName,
+      //     attributes: getAttributes(event.target),
+      //     value: event.target.value
+      //   };
+      //   console.log('Input:', targetData);
+      //   let source = getComponentSource(event)
+      //   logEvent('Input', { target: targetData, source: source });
+      // });
+
+      document.addEventListener('submit', (event) => {
+        let source = getComponentSource(event)
+          logEvent('Form Submit', { source: source, rawTag: event.target.outerHTML });
+          if(currentNavigationPath !== window.location.href) {
+          logEvent('Navigate To', { navigateTo: window.location.href });
+          currentNavigationPath = window.location.href;
+        }
+      });
+
+      // Console error events
+      // window.addEventListener('error', (event) => {
+      //     logEvent('Console Error', { message: event.message });
+      // });
+      // Console error events
+      // window.addEventListener('dblclick', (event) => {
+      //   console.log("event", event.target)
+      //   let source = getComponentSource(event)
+      //     logEvent('Double Click', { source: source, tagName: event.target.tagName, rawTag: event.target.outerHTML });
+      //     if(currentNavigationPath !== window.location.href) {
+      //     logEvent('Navigate To', { navigateTo: window.location.href });
+      //     currentNavigationPath = window.location.href;
+      //   }
+      // });
+      // Load events
+      window.addEventListener('load', (event) => {
+        currentNavigationPath = window.location.href
+          logEvent('Navigate To', { navigateTo: window.location.href });
+      });
+
+      // Navigation events
+      // window.addEventListener('popstate', (event) => {
+      //     logEvent('Navigate');
+      // });
+    </script> -->
+
+</body>
+
+</html>

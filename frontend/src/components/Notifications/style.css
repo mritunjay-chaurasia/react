@@ -1,0 +1,48 @@
+
+.display-list-css .toast-header {
+    color: white !important;          
+  }
+  .display-list-css {
+    z-index: 100 !important;
+  }
+  .toast-header .btn-close {
+    filter: invert(100%) !important;  
+  }
+
+  .notification-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.text-name {
+  font-size: 17px;
+}
+.toast-body{
+  background-color: white !important;
+}
+
+.toast-body-scroll {
+  max-height: 355px;
+  overflow-y: auto;
+}
+.task-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.task-details span{
+  text-align: left;
+}
+ 
+
+.toast-body {
+  padding: 10px;
+}
+
+  
+

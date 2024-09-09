@@ -1,0 +1,39 @@
+.cancelPreviewSettingsBtn {
+    width: 152px;
+    height: 45px;
+    background: #F5F5F5;
+    border-radius: 5px;
+}
+
+.cancelPreviewSettingsBtn>span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    color: #1E212B;
+}
+
+.savePreviewSettingsBtn {
+    width: 152px;
+    height: 45px;
+    background: #F07227;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.savePreviewSettingsBtn>span {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.savePreviewSettingsDiv {
+    background-color: white;
+    position: sticky;
+    bottom: 0;
+    -webkit-box-shadow: 0 -1px 6px rgba(50, 50, 50, 0.1);
+    -moz-box-shadow: 0 -1px 6px rgba(50, 50, 50, 0.1);
+    box-shadow: 0 -1px 6px rgba(50, 50, 50, 0.1);
+    display: flex;
+    justify-content: center;
+}

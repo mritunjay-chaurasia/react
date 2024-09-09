@@ -1,0 +1,85 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.multiple-screen-container{
+  /* width: 7%; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatbox-container {
+  /* width: 28%; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wireframe-container {
+  /* width: 65%; */
+  height: 100%;
+  background-image:url('./assets/images/checkbg.gif');
+  background-repeat: repeat;
+  border-radius: 8px;
+  border: 1px solid lightgrey;
+}
+.chat-box-div{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 855px) {
+  .chat-box-div {
+    flex-direction: column;
+  } 
+}
+
+
+.download-button-container {
+  /* width: 410px; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 120px;
+}
+
+
+
+.toggle-switch {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background-color: #f8f5f3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mode-button {
+  width: 150px;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #f07227;
+  font-weight: bold;
+  /* transition: background-color 0.3s; */
+}
+.mode-button:first-child {
+  margin-right: 0;
+}
+.mode-button:last-child {
+  margin-left: 0;
+}
+
+.mode-button.active {
+  background-color: #fff;
+  border-radius: 20px;
+  color: #284FA3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,0 +1,155 @@
+/* Let's highlight canvas boundaries */
+  /* Reset some default styling */
+  .gjs-cv-canvas {
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  .gjs-block {
+    width: 75px;
+    height: auto !important;
+    min-height: auto !important;
+  }
+  
+  .panel__top {
+    padding: 0 !important;
+    width: 100% !important;
+    display: flex !important;
+    position: initial !important;
+    justify-content: center !important;
+    justify-content: space-between !important;
+    background-color: #444 !important;
+  }
+  .panel__basic-actions {
+    position: initial !important;
+  }
+  
+  
+  .editor-row {
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+    flex-wrap: nowrap !important;
+    height: 100% !important;
+    width: 100%;
+  }
+
+  #blocks {
+    flex-grow: 1;
+    display: flex;
+  }
+  
+  /* .editor-canvas {
+    flex-grow: 1 !important;
+  } */
+  
+  .panel__right {
+    flex-basis: 230px !important;
+    position: relative !important;
+    overflow-y: auto !important;
+  }
+  
+  
+  /* .panel__switcher {
+    position: initial !important;
+  } */
+  
+  .panel__devices {
+    position: initial !important;
+  }
+  
+  
+  
+  
+  /* THEME */
+  
+  /* We can remove the border we've set at the beginning */
+  #gjs {
+    border: none;
+  }
+  /* Theming */
+  
+  /* Primary color for the background */
+  .gjs-one-bg {
+    background-color: #78366a;
+  }
+  
+  /* Secondary color for the text color */
+  .gjs-two-color {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Tertiary color for the background */
+  .gjs-three-bg {
+    background-color: #ec5896;
+    color: white;
+  }
+  
+  /* Quaternary color for the text color */
+  .gjs-four-color,
+  .gjs-four-color-h:hover {
+    color: #ec5896;
+  }
+  
+  
+  :root {
+    --gjs-primary-color: #78366a;
+    --gjs-secondary-color: rgba(255, 255, 255, 0.7);
+    --gjs-tertiary-color: #ec5896;
+    --gjs-quaternary-color: #ec5896;
+  }
+
+
+/* EXTRAS */
+#blocks > .gjs-blocks-cs {
+  flex-grow: 1;
+  width: 80px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+#blocks > .gjs-blocks-cs::-webkit-scrollbar {
+  width: 6px;
+}
+
+#blocks > .gjs-blocks-cs::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+#blocks > .gjs-blocks-cs::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #f5f5f5;
+}
+
+.styles-container {
+  height: 100%;
+}
+.styles-container > .gjs-sm-sectors {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.styles-container > .gjs-sm-sectors::-webkit-scrollbar {
+  width: 6px;
+}
+
+.styles-container > .gjs-sm-sectors::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+.styles-container > .gjs-sm-sectors::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #f5f5f5;
+}
+
+
+/* ------------------------------------------------------- */
+.gjs-pn-views-container, .gjs-pn-views {
+  display: none;
+}
+.gjs-pn-commands {
+  width: 100%;
+}

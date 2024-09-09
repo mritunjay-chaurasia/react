@@ -1,0 +1,16 @@
+.profileSetting_field {
+    height: fit-content;
+    padding: .5rem;
+    /* border: 1px solid; */
+    width: 50%;    
+}
+
+.profileSetting_holder {
+    display: flex;
+    flex-wrap: wrap;   
+    width: 70%;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    box-sizing: border-box;
+
+}

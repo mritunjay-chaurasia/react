@@ -1,0 +1,4 @@
+.ReactQuill .ql-editor{
+    /* display: flex !important; */
+    padding: unset !important;
+}

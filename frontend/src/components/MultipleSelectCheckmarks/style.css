@@ -1,0 +1,21 @@
+.rdrDefinedRangesWrapper{
+    display: none;
+}
+
+button.date-range-apply {
+    width: 20%;
+    border: 1px transparent;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0 auto;
+    color: white;
+    background:rgb(240, 114, 39);
+    font-size: 15px;
+}
+
+.date-range-apply.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+    filter: blur(1px); 
+  }
+  

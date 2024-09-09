@@ -1,0 +1,46 @@
+.appBody {
+    width: 100%;
+    height: auto;
+    min-height: calc(100% - 110px);
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 90px);
+}
+
+.appHeader {
+    width: 100%;
+    height: 65px;
+    min-height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 0 30px;
+    z-index: 100;
+}
+
+.pageHeadeing {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.appContent {
+    width: 100%;
+    height: calc(100vh - 105px);
+    min-height: calc(100vh - 105px);
+    max-height: calc(100vh - 105px);
+}
+
+.profileMenuContainer {
+    width: auto;
+    height: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.profileMenuContainer .profilemenuIcon {
+    width: 30px;
+    height: 30px;
+}

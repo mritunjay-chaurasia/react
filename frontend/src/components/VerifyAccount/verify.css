@@ -1,0 +1,20 @@
+.verificationEmailButton
+{
+    margin:.4rem .1rem;
+    border: none;
+    color:rgb(11 81 159);
+    background-color:transparent;
+}
+
+.verificationEmailButton:active
+{
+    text-shadow: 1px 1px 1px rgb(158, 158, 192);
+}
+
+#verificationEmailNotificationHolder
+{
+    background-color:rgb(252, 221, 203);
+    width:100%;
+    text-align:center;
+    height: 40px;
+}

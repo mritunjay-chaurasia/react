@@ -1,0 +1,53 @@
+.btn-color {
+  background-color: #0e1c36;
+  color: #fff;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+button.btn.submit-btn-style {
+  background: #284FA3;
+  color: white;
+  margin: 0 auto;
+}
+
+.profile-image-pic {
+  height: 4rem;
+  /* width: 13rem; */
+  object-fit: cover;
+}
+
+.input-style {
+  padding: 15px;
+  height: 58px;
+}
+
+.highlight_onHover {
+  color: #3764c5;
+  font-weight: 500;
+}
+
+.highlight_onHover:hover {
+  color: #3764c5;
+  text-decoration: underline;
+  text-shadow: .7px .7px 0px #91b1f5;
+}
+
+/* .centerForm {
+  margin: 0 auto;
+  width: 50%;
+  height: 40vh;
+} */
+
+.marginHandler {
+  margin-top: 10px !important;
+}
+
+/* .formHolder {
+  width: 100%;
+  height: 100%;
+  
+} */

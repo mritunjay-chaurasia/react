@@ -1,0 +1,42 @@
+.detailsBar
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.customerDetails
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    padding: 2%;
+    border: 1px dotted lightgrey;
+    border-radius: 10px;
+   
+    max-height: 55vh;
+    overflow-y: auto;
+}
+
+.dottedBorder
+{
+    /* background-color:#eeeeee; */
+    font-size: 17px;
+    padding: 1rem;
+    margin: 0 0;
+    width:100%;
+    border: 1px solid lightgrey;
+    /* border-radius: 10px;     */
+}
+
+.customerDetailsTitle
+{
+    font-weight: 900;
+    font-size: 20px;
+}
